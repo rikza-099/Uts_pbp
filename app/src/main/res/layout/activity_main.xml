@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- PENJELASAN: Menampilkan judul halaman utama dari string resource supaya teks tidak di-hardcode langsung di XML -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_smart_parking"
+        android:textSize="22sp" />
+
+    <!-- PENJELASAN: Kolom input nomor polisi kendaraan dengan hint yang diambil dari strings.xml -->
+    <EditText
+        android:id="@+id/etSatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_plat_nomor" />
+
+    <!-- PENJELASAN: Kolom input jenis kendaraan (misalnya Innova, Motor, dll.) dengan hint dari strings.xml -->
+    <EditText
+        android:id="@+id/etDua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_jenis_kendaraan" />
+
+    <!-- PERBAIKAN: Mengganti TODO_INPUT_TYPE menjadi number agar keyboard angka muncul saat mengisi durasi parkir -->
+    <!-- PENJELASAN: Membatasi jenis input ke angka (number) supaya pengguna diarahkan memasukkan durasi jam dengan benar -->
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_durasi_parkir"
+        android:inputType="number" />
+
+    <!-- PENJELASAN: Tombol utama untuk memicu proses validasi, perhitungan biaya parkir, dan perpindahan ke halaman hasil -->
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_hitung_hasil" />
+
+</LinearLayout>

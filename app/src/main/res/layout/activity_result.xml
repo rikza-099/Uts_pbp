@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- PENJELASAN: Menampilkan baris ringkasan data kendaraan dan jumlah jam parkir pada halaman hasil -->
+    <TextView
+        android:id="@+id/tvRingkasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <!-- PERBAIKAN: Mengganti TODO_TEXT_SIZE menjadi 20sp agar ukuran teks total biaya parkir terbaca jelas -->
+    <!-- PENJELASAN: Menampilkan total tarif parkir yang harus dibayarkan dengan ukuran huruf 20sp -->
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>

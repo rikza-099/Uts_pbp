@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart Parking</string>
+    <string name="title_smart_parking">SMART PARKING</string>
+    <string name="hint_plat_nomor">Nomor Polisi</string>
+    <string name="hint_jenis_kendaraan">Jenis Kendaraan</string>
+    <string name="hint_durasi_parkir">Durasi Parkir (jam)</string>
+    <string name="btn_hitung_hasil">Hitung dan Lihat Hasil</string>
+    <string name="error_wajib_diisi">Wajib diisi</string>
+    <string name="error_rentang_jam">Masukkan bilangan 1–10</string>
+    <string name="format_ringkasan">%1$s | %2$s | Jumlah: %3$d</string>
+    <string name="format_total">Total: Rp%1$d</string>
+</resources>
